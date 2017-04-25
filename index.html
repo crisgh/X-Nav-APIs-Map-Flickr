@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title> API Map Flickr </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+    <link rel="stylesheet" href="maps.css" />
+  </head>
+
+  <body>
+    <body>
+      <h4> 6.9.6 Leaflet: Fotos de Flickr </h4>
+      <p>Aplicación que muestra un mapa de OpenStreetMap, usando Leaflet,
+         con un formulario en el que se pueda introducir el nombre de un lugar.
+         <br>Cuando se introduzca uno, se mostrara un listado de los cinco primeros lugares que ofrezca Nominatim
+         para ese nombre de lugar,
+         <br> de forma que al pulsar sobre cualquiera de ellos, el mapa se centre en ese lugar.
+        <br>Además, en ese momento se abrirá un panel donde se mostrar ́an varias fotos de Flickr que tengan como etiqueta el nombre de
+lugar.
+      </p>
+
+    <div id="mapid"> </div>
+
+    <div id="search">
+      <input type="text" name="addr" value="" id="addr" size="10" />
+      <button type="button" onclick="addr_search();"> Buscar  </button>
+      <div id="results"/>
+      </div>
+      <div id="resultsImg"/>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+    <script src="maps.js"></script>
+    <footer>
+    		<div class="footer" id = "foot">
+    			<hr>
+    			<p>&copy; CursosWeb 2017</p>
+    			<p> Cristina Gallego Herrero <a id="code-link" href="">Código fuente de esta página</a></p><hr>
+    		<br>
+    			<div class="clearfix visible-xs-block"></div>
+    		</div>
+    	</footer>
+
+  </body>
+</html>
